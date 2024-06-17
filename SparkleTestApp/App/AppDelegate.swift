@@ -10,6 +10,7 @@ import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
 	private var window: NSWindow!
+	private let viewModel = AppViewModel()
 
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		NSApp.mainMenu = MainMenu()
@@ -23,7 +24,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		window.setFrameAutosaveName("com.hadiidbouk.SparkleTestApp.mainWindow")
 		window.title = "Sparkle Test App"
 		window.center()
-		window.contentView = NSHostingView(rootView: ContentView())
+		window.contentView = NSHostingView(rootView: AppView(viewModel: viewModel))
 		window.makeKeyAndOrderFront(self)
 
 		self.window = window

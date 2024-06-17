@@ -7,24 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F12A4242C20C91A007E0B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4232C20C91A007E0B47 /* ContentView.swift */; };
+		0F12A4242C20C91A007E0B47 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4232C20C91A007E0B47 /* AppView.swift */; };
 		0F12A4262C20C91B007E0B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F12A4252C20C91B007E0B47 /* Assets.xcassets */; };
 		0F12A4292C20C91B007E0B47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F12A4282C20C91B007E0B47 /* Preview Assets.xcassets */; };
 		0F12A4322C20C980007E0B47 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 0F12A4312C20C980007E0B47 /* Sparkle */; };
 		0F12A4352C20C9A5007E0B47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4342C20C9A4007E0B47 /* main.swift */; };
 		0F12A4382C20C9CB007E0B47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4372C20C9C8007E0B47 /* AppDelegate.swift */; };
 		0F12A4482C20CA08007E0B47 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4442C20CA08007E0B47 /* MainMenu.swift */; };
+		0F12A4842C20D036007E0B47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4832C20D036007E0B47 /* main.swift */; };
+		0F12A48F2C20D1D5007E0B47 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A48E2C20D1D3007E0B47 /* AppViewModel.swift */; };
+		0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy Files */ = {isa = PBXBuildFile; fileRef = 0F12A4812C20D036007E0B47 /* CommandLineTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F12A47F2C20D036007E0B47 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0F12A4992C20DAFA007E0B47 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F12A41E2C20C91A007E0B47 /* SparkleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F12A4232C20C91A007E0B47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0F12A4232C20C91A007E0B47 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		0F12A4252C20C91B007E0B47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F12A4282C20C91B007E0B47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F12A42A2C20C91B007E0B47 /* SparkleTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SparkleTestApp.entitlements; sourceTree = "<group>"; };
 		0F12A4342C20C9A4007E0B47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F12A4372C20C9C8007E0B47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F12A4442C20CA08007E0B47 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		0F12A4812C20D036007E0B47 /* CommandLineTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLineTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F12A4832C20D036007E0B47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0F12A4892C20D08E007E0B47 /* CommandLineTool */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CommandLineTool; sourceTree = "<group>"; };
+		0F12A48E2C20D1D3007E0B47 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F12A47E2C20D036007E0B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				0F12A4202C20C91A007E0B47 /* SparkleTestApp */,
+				0F12A4822C20D036007E0B47 /* CommandLineTool */,
 				0F12A41F2C20C91A007E0B47 /* Products */,
+				0F12A4882C20D08E007E0B47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0F12A41E2C20C91A007E0B47 /* SparkleTestApp.app */,
+				0F12A4812C20D036007E0B47 /* CommandLineTool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,7 +120,8 @@
 			children = (
 				0F12A4462C20CA08007E0B47 /* Menus */,
 				0F12A4372C20C9C8007E0B47 /* AppDelegate.swift */,
-				0F12A4232C20C91A007E0B47 /* ContentView.swift */,
+				0F12A4232C20C91A007E0B47 /* AppView.swift */,
+				0F12A48E2C20D1D3007E0B47 /* AppViewModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -93,6 +134,22 @@
 			path = Menus;
 			sourceTree = "<group>";
 		};
+		0F12A4822C20D036007E0B47 /* CommandLineTool */ = {
+			isa = PBXGroup;
+			children = (
+				0F12A4832C20D036007E0B47 /* main.swift */,
+			);
+			path = CommandLineTool;
+			sourceTree = "<group>";
+		};
+		0F12A4882C20D08E007E0B47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F12A4892C20D08E007E0B47 /* CommandLineTool */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +160,7 @@
 				0F12A41A2C20C91A007E0B47 /* Sources */,
 				0F12A41B2C20C91A007E0B47 /* Frameworks */,
 				0F12A41C2C20C91A007E0B47 /* Resources */,
+				0F12A4992C20DAFA007E0B47 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -116,6 +174,23 @@
 			productReference = 0F12A41E2C20C91A007E0B47 /* SparkleTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0F12A4802C20D036007E0B47 /* CommandLineTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F12A4852C20D036007E0B47 /* Build configuration list for PBXNativeTarget "CommandLineTool" */;
+			buildPhases = (
+				0F12A47D2C20D036007E0B47 /* Sources */,
+				0F12A47E2C20D036007E0B47 /* Frameworks */,
+				0F12A47F2C20D036007E0B47 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandLineTool;
+			productName = CommandLineTool;
+			productReference = 0F12A4812C20D036007E0B47 /* CommandLineTool */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +202,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					0F12A41D2C20C91A007E0B47 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0F12A4802C20D036007E0B47 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -148,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				0F12A41D2C20C91A007E0B47 /* SparkleTestApp */,
+				0F12A4802C20D036007E0B47 /* CommandLineTool */,
 			);
 		};
 /* End PBXProject section */
@@ -169,10 +248,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F12A48F2C20D1D5007E0B47 /* AppViewModel.swift in Sources */,
 				0F12A4482C20CA08007E0B47 /* MainMenu.swift in Sources */,
 				0F12A4382C20C9CB007E0B47 /* AppDelegate.swift in Sources */,
 				0F12A4352C20C9A5007E0B47 /* main.swift in Sources */,
-				0F12A4242C20C91A007E0B47 /* ContentView.swift in Sources */,
+				0F12A4242C20C91A007E0B47 /* AppView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F12A47D2C20D036007E0B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F12A4842C20D036007E0B47 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +441,30 @@
 			};
 			name = Release;
 		};
+		0F12A4862C20D036007E0B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QYWPTR48F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0F12A4872C20D036007E0B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QYWPTR48F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +482,15 @@
 			buildConfigurations = (
 				0F12A42E2C20C91B007E0B47 /* Debug */,
 				0F12A42F2C20C91B007E0B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F12A4852C20D036007E0B47 /* Build configuration list for PBXNativeTarget "CommandLineTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F12A4862C20D036007E0B47 /* Debug */,
+				0F12A4872C20D036007E0B47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
