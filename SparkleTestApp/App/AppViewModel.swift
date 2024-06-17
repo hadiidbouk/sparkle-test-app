@@ -5,17 +5,33 @@
 //  Created by Hadi Dbouk on 17/06/2024.
 //
 
+import XPCService
 import Foundation
+import SecurityFoundation
 
 @Observable
 final class AppViewModel {
-	var commandLineToolMessage = "-"
+	private let connection = NSXPCConnection(serviceName: "com.hadiidbouk.xpcservice")
 
-	func viewWillAppear() {
-		do {
-			commandLineToolMessage = try runCommandLineTool()
-		} catch {
-			commandLineToolMessage = error.localizedDescription
+	var commandLineToolMessage = "-"
+	var firstNumber = "1" { didSet { callXPCService() } }
+	var secondNumber = "2" { didSet { callXPCService() } }
+	var xpcServiceResult = "-"
+
+	init() {
+	}
+
+	func viewWillAppear() async {
+		Task {
+			connection.remoteObjectInterface = NSXPCInterface(with: XPCServiceProtocol.self)
+			connection.resume()
+
+			do {
+				commandLineToolMessage = try runCommandLineTool()
+				callXPCService()
+			} catch {
+				commandLineToolMessage = error.localizedDescription
+			}
 		}
 	}
 }
@@ -40,5 +56,20 @@ private extension AppViewModel {
 		let output = String(data: data, encoding: .utf8)
 
 		return output ?? "Nil"
+	}
+
+	func callXPCService() {
+		guard
+			let firstNumberInt = Int(firstNumber),
+			let secondNumberInt = Int(secondNumber)
+		else {
+			xpcServiceResult = "N/A"
+			return
+		}
+		if let service = connection.remoteObjectProxyWithErrorHandler({ print("Received error:", $0) }) as? XPCServiceProtocol {
+			service.performCalculation(firstNumber: firstNumberInt, secondNumber: secondNumberInt) { [weak self] result in
+				self?.xpcServiceResult = "\(result)"
+			}
+		}
 	}
 }

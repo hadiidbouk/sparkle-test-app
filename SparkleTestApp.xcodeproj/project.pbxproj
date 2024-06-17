@@ -17,7 +17,22 @@
 		0F12A4842C20D036007E0B47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4832C20D036007E0B47 /* main.swift */; };
 		0F12A48F2C20D1D5007E0B47 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A48E2C20D1D3007E0B47 /* AppViewModel.swift */; };
 		0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy Files */ = {isa = PBXBuildFile; fileRef = 0F12A4812C20D036007E0B47 /* CommandLineTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0F12A4A22C20DC99007E0B47 /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4A12C20DC99007E0B47 /* XPCService.swift */; };
+		0F12A4A62C20DC9A007E0B47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4A52C20DC9A007E0B47 /* main.swift */; };
+		0F12A4AC2C20DC9A007E0B47 /* XPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 0F12A49F2C20DC99007E0B47 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0F12A4B12C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */; };
+		0F12A4B22C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F12A4A92C20DC9A007E0B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F12A4162C20C91A007E0B47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F12A49E2C20DC99007E0B47;
+			remoteInfo = XPCService;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0F12A47F2C20D036007E0B47 /* CopyFiles */ = {
@@ -40,6 +55,17 @@
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F12A4AB2C20DC9A007E0B47 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				0F12A4AC2C20DC9A007E0B47 /* XPCService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +81,12 @@
 		0F12A4832C20D036007E0B47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F12A4892C20D08E007E0B47 /* CommandLineTool */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CommandLineTool; sourceTree = "<group>"; };
 		0F12A48E2C20D1D3007E0B47 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		0F12A49F2C20DC99007E0B47 /* XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F12A4A12C20DC99007E0B47 /* XPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCService.swift; sourceTree = "<group>"; };
+		0F12A4A52C20DC9A007E0B47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0F12A4A72C20DC9A007E0B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F12A4A82C20DC9A007E0B47 /* XPCService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCService.entitlements; sourceTree = "<group>"; };
+		0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +105,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F12A49C2C20DC99007E0B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0F12A4152C20C91A007E0B47 = {
 			isa = PBXGroup;
 			children = (
+				0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */,
 				0F12A4202C20C91A007E0B47 /* SparkleTestApp */,
 				0F12A4822C20D036007E0B47 /* CommandLineTool */,
+				0F12A4A02C20DC99007E0B47 /* XPCService */,
 				0F12A41F2C20C91A007E0B47 /* Products */,
 				0F12A4882C20D08E007E0B47 /* Frameworks */,
 			);
@@ -91,6 +132,7 @@
 			children = (
 				0F12A41E2C20C91A007E0B47 /* SparkleTestApp.app */,
 				0F12A4812C20D036007E0B47 /* CommandLineTool */,
+				0F12A49F2C20DC99007E0B47 /* XPCService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +192,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0F12A4A02C20DC99007E0B47 /* XPCService */ = {
+			isa = PBXGroup;
+			children = (
+				0F12A4A12C20DC99007E0B47 /* XPCService.swift */,
+				0F12A4A52C20DC9A007E0B47 /* main.swift */,
+				0F12A4A72C20DC9A007E0B47 /* Info.plist */,
+				0F12A4A82C20DC9A007E0B47 /* XPCService.entitlements */,
+			);
+			path = XPCService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,10 +214,12 @@
 				0F12A41B2C20C91A007E0B47 /* Frameworks */,
 				0F12A41C2C20C91A007E0B47 /* Resources */,
 				0F12A4992C20DAFA007E0B47 /* Copy Files */,
+				0F12A4AB2C20DC9A007E0B47 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0F12A4AA2C20DC9A007E0B47 /* PBXTargetDependency */,
 			);
 			name = SparkleTestApp;
 			packageProductDependencies = (
@@ -191,6 +246,23 @@
 			productReference = 0F12A4812C20D036007E0B47 /* CommandLineTool */;
 			productType = "com.apple.product-type.tool";
 		};
+		0F12A49E2C20DC99007E0B47 /* XPCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F12A4AD2C20DC9A007E0B47 /* Build configuration list for PBXNativeTarget "XPCService" */;
+			buildPhases = (
+				0F12A49B2C20DC99007E0B47 /* Sources */,
+				0F12A49C2C20DC99007E0B47 /* Frameworks */,
+				0F12A49D2C20DC99007E0B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCService;
+			productName = XPCService;
+			productReference = 0F12A49F2C20DC99007E0B47 /* XPCService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +277,9 @@
 						CreatedOnToolsVersion = 16.0;
 					};
 					0F12A4802C20D036007E0B47 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0F12A49E2C20DC99007E0B47 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -227,6 +302,7 @@
 			targets = (
 				0F12A41D2C20C91A007E0B47 /* SparkleTestApp */,
 				0F12A4802C20D036007E0B47 /* CommandLineTool */,
+				0F12A49E2C20DC99007E0B47 /* XPCService */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +317,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F12A49D2C20DC99007E0B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -251,6 +334,7 @@
 				0F12A48F2C20D1D5007E0B47 /* AppViewModel.swift in Sources */,
 				0F12A4482C20CA08007E0B47 /* MainMenu.swift in Sources */,
 				0F12A4382C20C9CB007E0B47 /* AppDelegate.swift in Sources */,
+				0F12A4B12C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */,
 				0F12A4352C20C9A5007E0B47 /* main.swift in Sources */,
 				0F12A4242C20C91A007E0B47 /* AppView.swift in Sources */,
 			);
@@ -264,7 +348,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F12A49B2C20DC99007E0B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F12A4A22C20DC99007E0B47 /* XPCService.swift in Sources */,
+				0F12A4B22C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */,
+				0F12A4A62C20DC9A007E0B47 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F12A4AA2C20DC9A007E0B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F12A49E2C20DC99007E0B47 /* XPCService */;
+			targetProxy = 0F12A4A92C20DC9A007E0B47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0F12A42B2C20C91B007E0B47 /* Debug */ = {
@@ -395,7 +497,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SparkleTestApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2QYWPTR48F;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -423,7 +525,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SparkleTestApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2QYWPTR48F;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2QYWPTR48F;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,10 +559,58 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2QYWPTR48F;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0F12A4AE2C20DC9A007E0B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCService/XPCService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YL77PVMV33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XPCService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPCService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.xpcservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0F12A4AF2C20DC9A007E0B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCService/XPCService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YL77PVMV33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XPCService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPCService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.xpcservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -491,6 +641,15 @@
 			buildConfigurations = (
 				0F12A4862C20D036007E0B47 /* Debug */,
 				0F12A4872C20D036007E0B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F12A4AD2C20DC9A007E0B47 /* Build configuration list for PBXNativeTarget "XPCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F12A4AE2C20DC9A007E0B47 /* Debug */,
+				0F12A4AF2C20DC9A007E0B47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

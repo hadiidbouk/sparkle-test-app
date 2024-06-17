@@ -35,6 +35,20 @@
                ReferencedContainer = "container:SparkleTestApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0F12A49E2C20DC99007E0B47"
+               BuildableName = "XPCService.xpc"
+               BlueprintName = "XPCService"
+               ReferencedContainer = "container:SparkleTestApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

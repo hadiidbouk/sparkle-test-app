@@ -25,7 +25,7 @@ final class MainMenu: NSMenu {
 
 		let aboutMenuItem = NSMenuItem(
 			title: "About",
-			action: #selector(self.openAboutPanel),
+			action: #selector(openAboutPanel),
 			keyEquivalent: ""
 		)
 		aboutMenuItem.target = self
@@ -33,8 +33,8 @@ final class MainMenu: NSMenu {
 
 		let checkForUpdatesMenuItem = NSMenuItem()
 		checkForUpdatesMenuItem.title = "Check For Updates"
-		checkForUpdatesMenuItem.target = self.updaterController
-		checkForUpdatesMenuItem.action = #selector(self.updaterController.checkForUpdates(_:))
+		checkForUpdatesMenuItem.target = updaterController
+		checkForUpdatesMenuItem.action = #selector(updaterController.checkForUpdates)
 
 		appMenu.addItem(checkForUpdatesMenuItem)
 
@@ -71,7 +71,7 @@ final class MainMenu: NSMenu {
 	init() {
 		super.init(title: "")
 
-		self.addItem(self.appMenuItem)
+		addItem(appMenuItem)
 	}
 
 	required init(coder: NSCoder) {

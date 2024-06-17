@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
-	let viewModel: AppViewModel
+	@Bindable var viewModel: AppViewModel
 
     var body: some View {
         VStack {
@@ -21,11 +21,22 @@ struct AppView: View {
 
 			Text("Command line tool output: \(viewModel.commandLineToolMessage)")
 				.frame(alignment: .leading)
+
+			Section("XPC Service") {
+				HStack {
+					TextField("First Number", text: $viewModel.firstNumber)
+					Text("+")
+					TextField("Second Number", text: $viewModel.secondNumber)
+					Spacer()
+					Text("=")
+					Text(viewModel.xpcServiceResult)
+				}
+			}
         }
         .padding()
 		.frame(width: 400, height: 300)
 		.task {
-			viewModel.viewWillAppear()
+			await viewModel.viewWillAppear()
 		}
     }
 }
