@@ -10,21 +10,25 @@ import AppKit
 import Sparkle
 
 final class MainMenu: NSMenu {
-	private lazy var updaterController = SPUStandardUpdaterController(
+	private let updaterController = SPUStandardUpdaterController(
 		startingUpdater: true,
 		updaterDelegate: nil,
 		userDriverDelegate: nil
 	)
 
-	private lazy var appMenuItem: NSMenuItem = {
+	init() {
+		super.init(title: "")
+
 		let menuItem = NSMenuItem()
+		addItem(menuItem)
+
 		let appMenu = NSMenu()
 		menuItem.submenu = appMenu
 
 		let productName = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
 
 		let aboutMenuItem = NSMenuItem(
-			title: "About",
+			title: "About \(productName)",
 			action: #selector(openAboutPanel),
 			keyEquivalent: ""
 		)
@@ -64,14 +68,6 @@ final class MainMenu: NSMenu {
 			action: #selector(NSApplication.terminate),
 			keyEquivalent: "q"
 		)
-
-		return menuItem
-	}()
-
-	init() {
-		super.init(title: "")
-
-		addItem(appMenuItem)
 	}
 
 	required init(coder: NSCoder) {
