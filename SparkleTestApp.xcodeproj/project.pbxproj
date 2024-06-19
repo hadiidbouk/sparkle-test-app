@@ -142,6 +142,7 @@
 		0F12A4D82C235C54007E0B47 /* ExamplePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePlugin.swift; sourceTree = "<group>"; };
 		0F141DBB2C236B230022F125 /* SharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F141DBD2C236B230022F125 /* SharedFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedFramework.h; sourceTree = "<group>"; };
+		0F141DD32C2374C30022F125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +218,7 @@
 			children = (
 				0F12A4362C20C9BC007E0B47 /* App */,
 				0F12A4342C20C9A4007E0B47 /* main.swift */,
+				0F141DD32C2374C30022F125 /* Info.plist */,
 				0F12A4252C20C91B007E0B47 /* Assets.xcassets */,
 				0F12A42A2C20C91B007E0B47 /* SparkleTestApp.entitlements */,
 				0F12A4272C20C91B007E0B47 /* Preview Content */,
@@ -697,6 +699,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkleTestApp/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -725,6 +728,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkleTestApp/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
