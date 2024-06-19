@@ -16,12 +16,19 @@
 		0F12A4482C20CA08007E0B47 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4442C20CA08007E0B47 /* MainMenu.swift */; };
 		0F12A4842C20D036007E0B47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4832C20D036007E0B47 /* main.swift */; };
 		0F12A48F2C20D1D5007E0B47 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A48E2C20D1D3007E0B47 /* AppViewModel.swift */; };
-		0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy Files */ = {isa = PBXBuildFile; fileRef = 0F12A4812C20D036007E0B47 /* CommandLineTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy CommandLineTool */ = {isa = PBXBuildFile; fileRef = 0F12A4812C20D036007E0B47 /* CommandLineTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0F12A4A22C20DC99007E0B47 /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4A12C20DC99007E0B47 /* XPCService.swift */; };
 		0F12A4A62C20DC9A007E0B47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4A52C20DC9A007E0B47 /* main.swift */; };
 		0F12A4AC2C20DC9A007E0B47 /* XPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 0F12A49F2C20DC99007E0B47 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0F12A4B12C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */; };
-		0F12A4B22C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */; };
+		0F12A4D92C235C5F007E0B47 /* ExamplePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4D82C235C54007E0B47 /* ExamplePlugin.swift */; };
+		0F12A4DB2C235DDA007E0B47 /* ExamplePlugin.bundle in Copy ExamplePlugin (1 item) */ = {isa = PBXBuildFile; fileRef = 0F12A4CF2C235AD5007E0B47 /* ExamplePlugin.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F141DBE2C236B230022F125 /* SharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F141DBD2C236B230022F125 /* SharedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F141DC12C236B230022F125 /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F141DBB2C236B230022F125 /* SharedFramework.framework */; };
+		0F141DC22C236B230022F125 /* SharedFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F141DBB2C236B230022F125 /* SharedFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F141DC72C236B3E0022F125 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */; };
+		0F141DC82C236B480022F125 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A4D42C235C31007E0B47 /* Plugin.swift */; };
+		0F141DC92C236B7A0022F125 /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F141DBB2C236B230022F125 /* SharedFramework.framework */; };
+		0F141DCE2C236BBF0022F125 /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F141DBB2C236B230022F125 /* SharedFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +38,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0F12A49E2C20DC99007E0B47;
 			remoteInfo = XPCService;
+		};
+		0F141DBF2C236B230022F125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F12A4162C20C91A007E0B47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F141DBA2C236B230022F125;
+			remoteInfo = SharedFramework;
+		};
+		0F141DCB2C236B7A0022F125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F12A4162C20C91A007E0B47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F141DBA2C236B230022F125;
+			remoteInfo = SharedFramework;
+		};
+		0F141DD02C236BBF0022F125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F12A4162C20C91A007E0B47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F141DBA2C236B230022F125;
+			remoteInfo = SharedFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,15 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		0F12A4992C20DAFA007E0B47 /* Copy Files */ = {
+		0F12A4992C20DAFA007E0B47 /* Copy CommandLineTool */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy Files */,
+				0F12A49A2C20DB09007E0B47 /* CommandLineTool in Copy CommandLineTool */,
 			);
-			name = "Copy Files";
+			name = "Copy CommandLineTool";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0F12A4AB2C20DC9A007E0B47 /* Embed XPC Services */ = {
@@ -64,6 +92,28 @@
 				0F12A4AC2C20DC9A007E0B47 /* XPCService.xpc in Embed XPC Services */,
 			);
 			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F12A4DA2C235DBE007E0B47 /* Copy ExamplePlugin (1 item) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0F12A4DB2C235DDA007E0B47 /* ExamplePlugin.bundle in Copy ExamplePlugin (1 item) */,
+			);
+			name = "Copy ExamplePlugin (1 item)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F141DC32C236B230022F125 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0F141DC22C236B230022F125 /* SharedFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -87,6 +137,11 @@
 		0F12A4A72C20DC9A007E0B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F12A4A82C20DC9A007E0B47 /* XPCService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCService.entitlements; sourceTree = "<group>"; };
 		0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceProtocol.swift; sourceTree = "<group>"; };
+		0F12A4CF2C235AD5007E0B47 /* ExamplePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamplePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F12A4D42C235C31007E0B47 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		0F12A4D82C235C54007E0B47 /* ExamplePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePlugin.swift; sourceTree = "<group>"; };
+		0F141DBB2C236B230022F125 /* SharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F141DBD2C236B230022F125 /* SharedFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedFramework.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F141DC12C236B230022F125 /* SharedFramework.framework in Frameworks */,
 				0F12A4322C20C980007E0B47 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +165,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F141DC92C236B7A0022F125 /* SharedFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F12A4CC2C235AD5007E0B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F141DCE2C236BBF0022F125 /* SharedFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F141DB82C236B230022F125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +190,11 @@
 		0F12A4152C20C91A007E0B47 = {
 			isa = PBXGroup;
 			children = (
-				0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */,
 				0F12A4202C20C91A007E0B47 /* SparkleTestApp */,
 				0F12A4822C20D036007E0B47 /* CommandLineTool */,
 				0F12A4A02C20DC99007E0B47 /* XPCService */,
+				0F12A4D32C235B62007E0B47 /* ExamplePlugin */,
+				0F141DBC2C236B230022F125 /* SharedFramework */,
 				0F12A41F2C20C91A007E0B47 /* Products */,
 				0F12A4882C20D08E007E0B47 /* Frameworks */,
 			);
@@ -133,6 +206,8 @@
 				0F12A41E2C20C91A007E0B47 /* SparkleTestApp.app */,
 				0F12A4812C20D036007E0B47 /* CommandLineTool */,
 				0F12A49F2C20DC99007E0B47 /* XPCService.xpc */,
+				0F12A4CF2C235AD5007E0B47 /* ExamplePlugin.bundle */,
+				0F141DBB2C236B230022F125 /* SharedFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,7 +278,36 @@
 			path = XPCService;
 			sourceTree = "<group>";
 		};
+		0F12A4D32C235B62007E0B47 /* ExamplePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				0F12A4D82C235C54007E0B47 /* ExamplePlugin.swift */,
+			);
+			path = ExamplePlugin;
+			sourceTree = "<group>";
+		};
+		0F141DBC2C236B230022F125 /* SharedFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0F12A4D42C235C31007E0B47 /* Plugin.swift */,
+				0F12A4B02C20DD29007E0B47 /* XPCServiceProtocol.swift */,
+				0F141DBD2C236B230022F125 /* SharedFramework.h */,
+			);
+			path = SharedFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F141DB62C236B230022F125 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F141DBE2C236B230022F125 /* SharedFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0F12A41D2C20C91A007E0B47 /* SparkleTestApp */ = {
@@ -213,13 +317,16 @@
 				0F12A41A2C20C91A007E0B47 /* Sources */,
 				0F12A41B2C20C91A007E0B47 /* Frameworks */,
 				0F12A41C2C20C91A007E0B47 /* Resources */,
-				0F12A4992C20DAFA007E0B47 /* Copy Files */,
+				0F12A4992C20DAFA007E0B47 /* Copy CommandLineTool */,
 				0F12A4AB2C20DC9A007E0B47 /* Embed XPC Services */,
+				0F12A4DA2C235DBE007E0B47 /* Copy ExamplePlugin (1 item) */,
+				0F141DC32C236B230022F125 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0F12A4AA2C20DC9A007E0B47 /* PBXTargetDependency */,
+				0F141DC02C236B230022F125 /* PBXTargetDependency */,
 			);
 			name = SparkleTestApp;
 			packageProductDependencies = (
@@ -257,11 +364,48 @@
 			buildRules = (
 			);
 			dependencies = (
+				0F141DCC2C236B7A0022F125 /* PBXTargetDependency */,
 			);
 			name = XPCService;
 			productName = XPCService;
 			productReference = 0F12A49F2C20DC99007E0B47 /* XPCService.xpc */;
 			productType = "com.apple.product-type.xpc-service";
+		};
+		0F12A4CE2C235AD5007E0B47 /* ExamplePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F12A4D02C235AD5007E0B47 /* Build configuration list for PBXNativeTarget "ExamplePlugin" */;
+			buildPhases = (
+				0F12A4CB2C235AD5007E0B47 /* Sources */,
+				0F12A4CC2C235AD5007E0B47 /* Frameworks */,
+				0F12A4CD2C235AD5007E0B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F141DD12C236BBF0022F125 /* PBXTargetDependency */,
+			);
+			name = ExamplePlugin;
+			productName = ExamplePlugin;
+			productReference = 0F12A4CF2C235AD5007E0B47 /* ExamplePlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		0F141DBA2C236B230022F125 /* SharedFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F141DC62C236B230022F125 /* Build configuration list for PBXNativeTarget "SharedFramework" */;
+			buildPhases = (
+				0F141DB62C236B230022F125 /* Headers */,
+				0F141DB72C236B230022F125 /* Sources */,
+				0F141DB82C236B230022F125 /* Frameworks */,
+				0F141DB92C236B230022F125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedFramework;
+			productName = SharedFramework;
+			productReference = 0F141DBB2C236B230022F125 /* SharedFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -280,6 +424,12 @@
 						CreatedOnToolsVersion = 16.0;
 					};
 					0F12A49E2C20DC99007E0B47 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0F12A4CE2C235AD5007E0B47 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0F141DBA2C236B230022F125 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -303,6 +453,8 @@
 				0F12A41D2C20C91A007E0B47 /* SparkleTestApp */,
 				0F12A4802C20D036007E0B47 /* CommandLineTool */,
 				0F12A49E2C20DC99007E0B47 /* XPCService */,
+				0F12A4CE2C235AD5007E0B47 /* ExamplePlugin */,
+				0F141DBA2C236B230022F125 /* SharedFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +476,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F12A4CD2C235AD5007E0B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F141DB92C236B230022F125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -334,7 +500,6 @@
 				0F12A48F2C20D1D5007E0B47 /* AppViewModel.swift in Sources */,
 				0F12A4482C20CA08007E0B47 /* MainMenu.swift in Sources */,
 				0F12A4382C20C9CB007E0B47 /* AppDelegate.swift in Sources */,
-				0F12A4B12C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */,
 				0F12A4352C20C9A5007E0B47 /* main.swift in Sources */,
 				0F12A4242C20C91A007E0B47 /* AppView.swift in Sources */,
 			);
@@ -353,8 +518,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F12A4A22C20DC99007E0B47 /* XPCService.swift in Sources */,
-				0F12A4B22C20DD33007E0B47 /* XPCServiceProtocol.swift in Sources */,
 				0F12A4A62C20DC9A007E0B47 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F12A4CB2C235AD5007E0B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F12A4D92C235C5F007E0B47 /* ExamplePlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F141DB72C236B230022F125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F141DC82C236B480022F125 /* Plugin.swift in Sources */,
+				0F141DC72C236B3E0022F125 /* XPCServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +546,21 @@
 			isa = PBXTargetDependency;
 			target = 0F12A49E2C20DC99007E0B47 /* XPCService */;
 			targetProxy = 0F12A4A92C20DC9A007E0B47 /* PBXContainerItemProxy */;
+		};
+		0F141DC02C236B230022F125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F141DBA2C236B230022F125 /* SharedFramework */;
+			targetProxy = 0F141DBF2C236B230022F125 /* PBXContainerItemProxy */;
+		};
+		0F141DCC2C236B7A0022F125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F141DBA2C236B230022F125 /* SharedFramework */;
+			targetProxy = 0F141DCB2C236B7A0022F125 /* PBXContainerItemProxy */;
+		};
+		0F141DD12C236BBF0022F125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F141DBA2C236B230022F125 /* SharedFramework */;
+			targetProxy = 0F141DD02C236BBF0022F125 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,7 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.SparkleTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -539,7 +735,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.SparkleTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -551,7 +747,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -563,7 +759,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -587,7 +783,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -611,7 +807,121 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		0F12A4D12C235AD5007E0B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = YL77PVMV33;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = ExamplePlugin.ExamplePlugin;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.ExamplePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0F12A4D22C235AD5007E0B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = YL77PVMV33;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = ExamplePlugin.ExamplePlugin;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.ExamplePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0F141DC42C236B230022F125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YL77PVMV33;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.SharedFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0F141DC52C236B230022F125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YL77PVMV33;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.SharedFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -650,6 +960,24 @@
 			buildConfigurations = (
 				0F12A4AE2C20DC9A007E0B47 /* Debug */,
 				0F12A4AF2C20DC9A007E0B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F12A4D02C235AD5007E0B47 /* Build configuration list for PBXNativeTarget "ExamplePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F12A4D12C235AD5007E0B47 /* Debug */,
+				0F12A4D22C235AD5007E0B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F141DC62C236B230022F125 /* Build configuration list for PBXNativeTarget "SharedFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F141DC42C236B230022F125 /* Debug */,
+				0F141DC52C236B230022F125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

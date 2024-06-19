@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SparkleTestApp.xcodeproj">
+      location = "group:../SparkleTestApp.xcodeproj">
    </FileRef>
 </Workspace>

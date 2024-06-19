@@ -49,6 +49,34 @@
                ReferencedContainer = "container:SparkleTestApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0F12A4CE2C235AD5007E0B47"
+               BuildableName = "ExamplePlugin.bundle"
+               BlueprintName = "ExamplePlugin"
+               ReferencedContainer = "container:SparkleTestApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0F141DBA2C236B230022F125"
+               BuildableName = "SharedFramework.framework"
+               BlueprintName = "SharedFramework"
+               ReferencedContainer = "container:SparkleTestApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

@@ -8,6 +8,7 @@
 import XPCService
 import Foundation
 import SecurityFoundation
+import SharedFramework
 
 @Observable
 final class AppViewModel {
@@ -17,10 +18,9 @@ final class AppViewModel {
 	var firstNumber = "1" { didSet { callXPCService() } }
 	var secondNumber = "2" { didSet { callXPCService() } }
 	var xpcServiceResult = "-"
+	var pluginMessage = "-"
 
-	init() {
-	}
-
+	@MainActor
 	func viewWillAppear() async {
 		Task {
 			connection.remoteObjectInterface = NSXPCInterface(with: XPCServiceProtocol.self)
@@ -66,7 +66,11 @@ private extension AppViewModel {
 			xpcServiceResult = "N/A"
 			return
 		}
-		if let service = connection.remoteObjectProxyWithErrorHandler({ print("Received error:", $0) }) as? XPCServiceProtocol {
+
+		let service = connection.remoteObjectProxyWithErrorHandler {
+			logger.error("Received error: \($0)")
+		}
+		if let service = service as? XPCServiceProtocol {
 			service.performCalculation(firstNumber: firstNumberInt, secondNumber: secondNumberInt) { [weak self] result in
 				self?.xpcServiceResult = "\(result)"
 			}

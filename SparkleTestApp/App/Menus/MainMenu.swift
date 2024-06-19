@@ -74,7 +74,7 @@ final class MainMenu: NSMenu {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	@objc private func openAboutPanel() {
+	@MainActor @objc private func openAboutPanel() {
 		NSApp.orderFrontStandardAboutPanel(nil)
 	}
 }
