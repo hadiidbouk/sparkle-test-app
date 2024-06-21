@@ -3,7 +3,6 @@
 //  Immi-macOS
 //
 //  Created by Hadi Dbouk on 28/07/2022.
-//  Copyright © 2022 Fueled. All rights reserved.
 //
 
 import AppKit
