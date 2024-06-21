@@ -1,6 +1,6 @@
 # Sparkle Test App
 
-A very basic project helpful for testing the Sparkle framework when signing the app package manually, it contains:
+A very basic project helpful for testing the Sparkle framework, it contains:
 - A macOS App
 - An XPC Service
 - Command Line Tool
