@@ -1,6 +1,8 @@
 # Sparkle Test App
 
-A very basic project helpful for testing the Sparkle framework, it contains:
+A sample project for testing the [autosparkle](https://github.com/hadiidbouk/autosparkle) command line tool.
+
+The project consists of:
 - A macOS App
 - An XPC Service
 - Command Line Tool
@@ -8,7 +10,4 @@ A very basic project helpful for testing the Sparkle framework, it contains:
 - A framework
 
 ### Sparkle Configuration
-Make sure to add your own `SUFeedURL` and `SUPublicEDKey` values in the app `info.plist`.
-
-
-
+Make sure to add your own `SUFeedURL` and `SUPublicEDKey` values in the app `Info.plist`.
